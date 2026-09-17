@@ -1,0 +1,2 @@
+model,accuracy,precision,recall,f1,roc_auc,samples,positive_samples,negative_samples,evaluation
+Random Forest,0.9673469387755103,0.9913793103448276,0.9426229508196722,0.9663865546218487,0.9926029588164733,1222,611,611,2025 stratified holdout
