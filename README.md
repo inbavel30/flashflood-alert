@@ -1,10 +1,10 @@
-🌊 FlashFlood Alert AI: Hyper-Local Flash Flood & Landslide Early Warning System
+FlashFlood Alert AI: Hyper-Local Flash Flood & Landslide Early Warning System
 
 **An AI-powered multi-source early warning and disaster-response platform for hilly regions**
 
 ---
 
-🌍 Overview
+Overview
 
 Flash floods and rainfall-triggered landslides can develop rapidly in hilly regions. Regional warnings may not provide enough information about the specific village, affected area, available shelter, or safer evacuation route.
 
@@ -16,25 +16,25 @@ The system focuses on answering:
 
 ---
 
-🚀 Key Features
+Key Features
 
-- 🌧️ **Multi-Source Risk Analysis** — Weather, rainfall, soil, terrain, GIS, historical and IoT data.
-- 🗺️ **Hyper-Local Risk Mapping** — Village/ward-level hazard visualization.
-- 🌊 **Flash Flood Prediction** — AI-based flash-flood risk assessment.
-- ⛰️ **Landslide Risk Detection** — Uses rainfall, soil, slope and tilt-related factors.
-- 🔄 **Flood–Landslide Cascade Analysis** — Identifies potential debris and channel-blockage effects.
-- ⏱️ **Early Warning** — Provides an estimated warning lead-time window.
-- 🚨 **Actionable Alerts** — LOW, MODERATE, HIGH and CRITICAL risk levels.
-- 🏠 **Shelter Identification** — Shows available nearby shelters.
-- 🛣️ **Safer Route Guidance** — Identifies safer and potentially blocked evacuation routes.
-- 📡 **IoT Monitoring** — Real-time environmental and sensor observations.
-- 📶 **Offline-Resilient Communication** — ESP32 + LoRa + edge/local alert concepts.
-- 🔍 **Explainable Risk Factors** — Shows factors contributing to the assessed risk.
-- 🔁 **Continuous Validation** — Prediction → Event → Validation → Improvement.
+- **Multi-Source Risk Analysis** — Weather, rainfall, soil, terrain, GIS, historical and IoT data.
+- **Hyper-Local Risk Mapping** — Village/ward-level hazard visualization.
+- **Flash Flood Prediction** — AI-based flash-flood risk assessment.
+- **Landslide Risk Detection** — Uses rainfall, soil, slope and tilt-related factors.
+- **Flood–Landslide Cascade Analysis** — Identifies potential debris and channel-blockage effects.
+- **Early Warning** — Provides an estimated warning lead-time window.
+- **Actionable Alerts** — LOW, MODERATE, HIGH and CRITICAL risk levels.
+- **Shelter Identification** — Shows available nearby shelters.
+- **Safer Route Guidance** — Identifies safer and potentially blocked evacuation routes.
+- **IoT Monitoring** — Real-time environmental and sensor observations.
+- **Offline-Resilient Communication** — ESP32 + LoRa + edge/local alert concepts.
+- **Explainable Risk Factors** — Shows factors contributing to the assessed risk.
+- **Continuous Validation** — Prediction → Event → Validation → Improvement.
 
 ---
 
-🧠 AI / ML
+AI / ML
 
 - **XGBoost** — Flash-flood risk prediction
 - **Random Forest** — Model validation
@@ -43,20 +43,20 @@ The system focuses on answering:
 
 ---
 
-🧠 Risk Inputs
+Risk Inputs
 
-- 🌧️ **Rainfall**
-- 💧 **Soil Moisture**
-- 🌦️ **Weather**
-- 🗺️ **Terrain / DEM**
-- ⛰️ **Slope**
-- 📐 **Tilt**
-- 📚 **Historical Events**
-- 📡 **IoT Observations**
+- **Rainfall**
+- **Soil Moisture**
+- **Weather**
+- **Terrain / DEM**
+- **Slope**
+- **Tilt**
+- **Historical Events**
+- **IoT Observations**
 
 ---
 
-💻 Technology Stack
+Technology Stack
 
 **Frontend**
 
@@ -92,7 +92,7 @@ The system focuses on answering:
 
 ---
 
-⚙️ System Workflow
+System Workflow
 
 ```text
 ┌─────────────────────────┐
@@ -137,7 +137,7 @@ The system focuses on answering:
 │    Emergency Action     │
 └─────────────────────────┘
 
-🗺️ Study Area
+Study Area
 
 The current system focuses on Uttarakhand.
 
@@ -157,19 +157,19 @@ Lata
 Pipalkoti
 Nautha
 
-🚨 Risk & Response
+Risk & Response
 
 Risk Level	Response
-🟢 LOW	Monitor
-🟡 MODERATE	Prepare
-🟠 HIGH	Take precautionary action
-🔴 CRITICAL	Immediate emergency attention
+LOW	Monitor
+MODERATE	Prepare
+HIGH	Take precautionary action
+CRITICAL	Immediate emergency attention
 
 The platform connects risk assessment with:
 
 Alerts → Affected Areas → Evacuation Guidance → Shelters → Safer Routes
 
-📡 IoT & Offline Warning
+IoT & Offline Warning
 
 Sensors
    ↓
@@ -183,7 +183,7 @@ Local Warning / Siren
 
 The architecture is designed to support critical warning communication during connectivity failures.
 
-🌱 Impact
+Impact
 
 Earlier disaster preparedness
 Hyper-local village-level risk information
@@ -193,7 +193,7 @@ Protection of roads, bridges, schools and hospitals
 Improved flood–landslide awareness
 Low-cost and scalable IoT monitoring
 
-🎯 Target Users
+Target Users
 
 Disaster Management Authorities
 District / Local Administration
@@ -202,18 +202,4 @@ Infrastructure Teams
 Local Bodies
 Hilly Communities
 
-🧭 Competitive Comparison
-
-FEATURES	IMD FFG	CWC Flood Forecast	GSI Landslide Forecast	Google Flood Hub	OUR SOLUTION
-| **FEATURES**                      | **IMD FFG** | **CWC Flood Forecast** | **GSI Landslide Forecast** | **Google Flood Hub** | **OUR SOLUTION** |
-| :-------------------------------- | :---------: | :--------------------: | :------------------------: | :------------------: | :--------------: |
-| **Rainfall / Weather Data**       |      ✓      |            ✓           |              ✗             |           ✓          |       **✓**      |
-| **Real-Time IoT Sensors**         |      ✗      |            ✓           |              ✗             |           ✗          |       **✓**      |
-| **Hyper-Local Village/Ward Risk** |      ✗      |            ✗           |              ✗             |           ✓          |       **✓**      |
-| **AI + Hydrological Fusion**      |      ✗      |            ✗           |              ✗             |           ✓          |       **✓**      |
-| **Flood–Landslide Interaction**   |      ✓      |            ✗           |              ✓             |           ✗          |       **✓**      |
-| **Explainable Risk Factors**      |      ✗      |            ✗           |              ✗             |           ✗          |       **✓**      |
-| **Evacuation Route / Shelter**    |      ✗      |            ✗           |              ✗             |           ✗          |       **✓**      |
-| **Offline LoRa + Local Alert**    |      ✗      |            ✗           |              ✗             |           ✗          |       **✓**      |
-| **Prediction → Action**           |      ✗      |            ✗           |              ✗             |           ✗          |       **✓**      |
-
+<img width="607" height="542" alt="Screenshot (837)" src="https://github.com/user-attachments/assets/5427dbdc-f4a2-4398-85f1-60ccd0377d4a" />
