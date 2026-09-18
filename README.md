@@ -202,4 +202,4 @@ Infrastructure Teams
 Local Bodies
 Hilly Communities
 
-<img width="607" height="542" alt="Screenshot (837)" src="https://github.com/user-attachments/assets/5427dbdc-f4a2-4398-85f1-60ccd0377d4a" />
+
