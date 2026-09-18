@@ -41,81 +41,117 @@ The system focuses on answering:
 - **SHAP** — Explainable risk factors
 - **Pandas & NumPy** — Data processing and feature engineering
 
-### Risk Inputs
+## 🧠 Risk Inputs
+
+- 🌧️ **Rainfall**
+- 💧 **Soil Moisture**
+- 🌦️ **Weather**
+- 🗺️ **Terrain / DEM**
+- ⛰️ **Slope**
+- 📐 **Tilt**
+- 📚 **Historical Events**
+- 📡 **IoT Observations**
+
+---
+
+## 💻 Technology Stack
+
+### Frontend
+
+- **React.js**
+- **TypeScript**
+- **Vite**
+- **Tailwind CSS**
+
+### Backend
+
+- **Python**
+- **FastAPI**
+- **Supabase**
+- **PostgreSQL**
+
+### GIS
+
+- **Interactive Maps**
+- **OpenStreetMap**
+- **GPS**
+- **Terrain / DEM**
+
+### IoT
+
+- **ESP32**
+- **LoRa**
+- **Rain Sensor**
+- **Soil Moisture Sensor**
+- **MPU6050**
+- **BME280**
+- **NEO-6M GPS**
+- **ESP32-CAM**
+
+---
+
+## ⚙️ System Workflow
 
 ```text
-Rainfall
-Soil Moisture
-Weather
-Terrain / DEM
-Slope
-Tilt
-Historical Events
-IoT Observations
-💻 Technology Stack
-Frontend
-React.js
-TypeScript
-Vite
-Tailwind CSS
-Backend
-Python
-FastAPI
-Supabase
-PostgreSQL
-GIS
-Interactive Maps
-OpenStreetMap
-GPS
-Terrain / DEM
-IoT
-ESP32
-LoRa
-Rain Sensor
-Soil Moisture Sensor
-MPU6050
-BME280
-NEO-6M GPS
-ESP32-CAM
-⚙️ System Workflow
-Multi-Source Data
-       ↓
-IoT + Weather + GIS + Terrain
-       ↓
-Data Processing
-       ↓
-AI / ML Risk Models
-       ↓
-Flood + Landslide Risk
-       ↓
-Combined Risk Analysis
-       ↓
-Early Warning
-       ↓
-Affected Area
-       ↓
-Shelter + Safer Route
-       ↓
-Emergency Action
+┌─────────────────────────┐
+│    Multi-Source Data    │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ IoT + Weather + GIS     │
+│       + Terrain         │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│     Data Processing     │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│    AI / ML Risk Models  │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ Flood + Landslide Risk  │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│   Combined Risk         │
+│      Analysis           │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│     Early Warning       │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│     Affected Area       │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│ Shelter + Safer Route   │
+└────────────┬────────────┘
+             ↓
+┌─────────────────────────┐
+│    Emergency Action     │
+└─────────────────────────┘
+
 🗺️ Study Area
 
-The current system focuses on Uttarakhand, including:
+The current system focuses on Uttarakhand.
 
 Rudraprayag
-
 Gaurikund
 Rambara
 Kalimath
 Semi
 Chandrapuri
 Agastmuni
-
 Chamoli
-
 Tapovan
 Lata
 Pipalkoti
 Nautha
+
 🚨 Risk & Response
 Risk Level	Response
 🟢 LOW	Monitor
@@ -123,7 +159,9 @@ Risk Level	Response
 🟠 HIGH	Take precautionary action
 🔴 CRITICAL	Immediate emergency attention
 
-The platform connects risk assessment directly with alerts, affected areas, evacuation guidance, shelters and safer routes.
+The platform connects risk assessment with:
+
+Alerts → Affected Areas → Evacuation Guidance → Shelters → Safer Routes
 
 📡 IoT & Offline Warning
 Sensors
@@ -136,7 +174,7 @@ LoRa
    ↓
 Local Warning / Siren
 
-This architecture is intended to maintain critical warning capabilities during connectivity failures.
+The architecture is designed to support critical warning communication during connectivity failures.
 
 🌱 Impact
 Earlier disaster preparedness
@@ -146,6 +184,7 @@ Protection of vulnerable communities
 Protection of roads, bridges, schools and hospitals
 Improved flood–landslide awareness
 Low-cost and scalable IoT monitoring
+
 🎯 Target Users
 Disaster Management Authorities
 District / Local Administration
