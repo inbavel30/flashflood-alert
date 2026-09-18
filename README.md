@@ -205,12 +205,15 @@ Hilly Communities
 🧭 Competitive Comparison
 
 FEATURES	IMD FFG	CWC Flood Forecast	GSI Landslide Forecast	Google Flood Hub	OUR SOLUTION
-Rainfall / Weather Data	✓	✓	✗	✓	✓
-Real-Time IoT Sensors	✗	✓	✗	✗	✓
-Hyper-Local Village/Ward Risk	✗	✗	✗	✓	✓
-AI + Hydrological Fusion	✗	✗	✗	✓	✓
-Flood–Landslide Interaction	✓	✗	✓	✗	✓
-Explainable Risk Factors	✗	✗	✗	✗	✓
-Evacuation Route / Shelter	✗	✗	✗	✗	✓
-Offline LoRa + Local Alert	✗	✗	✗	✗	✓
-Prediction → Action	✗	✗	✗	✗	✓
+| **FEATURES**                      | **IMD FFG** | **CWC Flood Forecast** | **GSI Landslide Forecast** | **Google Flood Hub** | **OUR SOLUTION** |
+| :-------------------------------- | :---------: | :--------------------: | :------------------------: | :------------------: | :--------------: |
+| **Rainfall / Weather Data**       |      ✓      |            ✓           |              ✗             |           ✓          |       **✓**      |
+| **Real-Time IoT Sensors**         |      ✗      |            ✓           |              ✗             |           ✗          |       **✓**      |
+| **Hyper-Local Village/Ward Risk** |      ✗      |            ✗           |              ✗             |           ✓          |       **✓**      |
+| **AI + Hydrological Fusion**      |      ✗      |            ✗           |              ✗             |           ✓          |       **✓**      |
+| **Flood–Landslide Interaction**   |      ✓      |            ✗           |              ✓             |           ✗          |       **✓**      |
+| **Explainable Risk Factors**      |      ✗      |            ✗           |              ✗             |           ✗          |       **✓**      |
+| **Evacuation Route / Shelter**    |      ✗      |            ✗           |              ✗             |           ✗          |       **✓**      |
+| **Offline LoRa + Local Alert**    |      ✗      |            ✗           |              ✗             |           ✗          |       **✓**      |
+| **Prediction → Action**           |      ✗      |            ✗           |              ✗             |           ✗          |       **✓**      |
+
