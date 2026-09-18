@@ -1,10 +1,10 @@
 🌊 FlashFlood Alert AI: Hyper-Local Flash Flood & Landslide Early Warning System
 
- **An AI-powered multi-source early warning and disaster-response platform for hilly regions**
+**An AI-powered multi-source early warning and disaster-response platform for hilly regions**
 
 ---
 
- 🌍 Overview
+🌍 Overview
 
 Flash floods and rainfall-triggered landslides can develop rapidly in hilly regions. Regional warnings may not provide enough information about the specific village, affected area, available shelter, or safer evacuation route.
 
@@ -16,32 +16,34 @@ The system focuses on answering:
 
 ---
 
-## 🚀 Key Features
+🚀 Key Features
 
 - 🌧️ **Multi-Source Risk Analysis** — Weather, rainfall, soil, terrain, GIS, historical and IoT data.
 - 🗺️ **Hyper-Local Risk Mapping** — Village/ward-level hazard visualization.
 - 🌊 **Flash Flood Prediction** — AI-based flash-flood risk assessment.
 - ⛰️ **Landslide Risk Detection** — Uses rainfall, soil, slope and tilt-related factors.
-- 🔄 **Flood–Landslide Cascade Analysis** — Identifies potential debris/channel-blockage effects.
+- 🔄 **Flood–Landslide Cascade Analysis** — Identifies potential debris and channel-blockage effects.
 - ⏱️ **Early Warning** — Provides an estimated warning lead-time window.
 - 🚨 **Actionable Alerts** — LOW, MODERATE, HIGH and CRITICAL risk levels.
 - 🏠 **Shelter Identification** — Shows available nearby shelters.
 - 🛣️ **Safer Route Guidance** — Identifies safer and potentially blocked evacuation routes.
 - 📡 **IoT Monitoring** — Real-time environmental and sensor observations.
 - 📶 **Offline-Resilient Communication** — ESP32 + LoRa + edge/local alert concepts.
-- 🔍 **Explainable Risk Factors** — Shows the factors contributing to the assessed risk.
+- 🔍 **Explainable Risk Factors** — Shows factors contributing to the assessed risk.
 - 🔁 **Continuous Validation** — Prediction → Event → Validation → Improvement.
 
 ---
 
-## 🧠 AI / ML
+🧠 AI / ML
 
 - **XGBoost** — Flash-flood risk prediction
 - **Random Forest** — Model validation
 - **SHAP** — Explainable risk factors
 - **Pandas & NumPy** — Data processing and feature engineering
 
-## 🧠 Risk Inputs
+---
+
+🧠 Risk Inputs
 
 - 🌧️ **Rainfall**
 - 💧 **Soil Moisture**
@@ -54,43 +56,43 @@ The system focuses on answering:
 
 ---
 
-## 💻 Technology Stack
+💻 Technology Stack
 
-### Frontend
+**Frontend**
 
-- **React.js**
-- **TypeScript**
-- **Vite**
-- **Tailwind CSS**
+- React.js
+- TypeScript
+- Vite
+- Tailwind CSS
 
-### Backend
+**Backend**
 
-- **Python**
-- **FastAPI**
-- **Supabase**
-- **PostgreSQL**
+- Python
+- FastAPI
+- Supabase
+- PostgreSQL
 
-### GIS
+**GIS**
 
-- **Interactive Maps**
-- **OpenStreetMap**
-- **GPS**
-- **Terrain / DEM**
+- Interactive Maps
+- OpenStreetMap
+- GPS
+- Terrain / DEM
 
-### IoT
+**IoT**
 
-- **ESP32**
-- **LoRa**
-- **Rain Sensor**
-- **Soil Moisture Sensor**
-- **MPU6050**
-- **BME280**
-- **NEO-6M GPS**
-- **ESP32-CAM**
+- ESP32
+- LoRa
+- Rain Sensor
+- Soil Moisture Sensor
+- MPU6050
+- BME280
+- NEO-6M GPS
+- ESP32-CAM
 
 ---
 
-## ⚙️ System Workflow
+⚙️ System Workflow
 
 ```text
 ┌─────────────────────────┐
@@ -140,19 +142,23 @@ The system focuses on answering:
 The current system focuses on Uttarakhand.
 
 Rudraprayag
+
 Gaurikund
 Rambara
 Kalimath
 Semi
 Chandrapuri
 Agastmuni
+
 Chamoli
+
 Tapovan
 Lata
 Pipalkoti
 Nautha
 
 🚨 Risk & Response
+
 Risk Level	Response
 🟢 LOW	Monitor
 🟡 MODERATE	Prepare
@@ -164,6 +170,7 @@ The platform connects risk assessment with:
 Alerts → Affected Areas → Evacuation Guidance → Shelters → Safer Routes
 
 📡 IoT & Offline Warning
+
 Sensors
    ↓
 ESP32
@@ -177,6 +184,7 @@ Local Warning / Siren
 The architecture is designed to support critical warning communication during connectivity failures.
 
 🌱 Impact
+
 Earlier disaster preparedness
 Hyper-local village-level risk information
 Faster evacuation planning
@@ -186,6 +194,7 @@ Improved flood–landslide awareness
 Low-cost and scalable IoT monitoring
 
 🎯 Target Users
+
 Disaster Management Authorities
 District / Local Administration
 Emergency Response Teams
@@ -193,3 +202,15 @@ Infrastructure Teams
 Local Bodies
 Hilly Communities
 
+🧭 Competitive Comparison
+
+FEATURES	IMD FFG	CWC Flood Forecast	GSI Landslide Forecast	Google Flood Hub	OUR SOLUTION
+Rainfall / Weather Data	✓	✓	✗	✓	✓
+Real-Time IoT Sensors	✗	✓	✗	✗	✓
+Hyper-Local Village/Ward Risk	✗	✗	✗	✓	✓
+AI + Hydrological Fusion	✗	✗	✗	✓	✓
+Flood–Landslide Interaction	✓	✗	✓	✗	✓
+Explainable Risk Factors	✗	✗	✗	✗	✓
+Evacuation Route / Shelter	✗	✗	✗	✗	✓
+Offline LoRa + Local Alert	✗	✗	✗	✗	✓
+Prediction → Action	✗	✗	✗	✗	✓
