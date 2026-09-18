@@ -192,3 +192,17 @@ Emergency Response Teams
 Infrastructure Teams
 Local Bodies
 Hilly Communities
+
+## 🏆 Competitive Comparison
+
+| **Feature** | **IMD FFG** | **CWC Flood Forecast** | **GSI Landslide Forecast** | **Google Flood Hub** | **FlashFlood Alert AI** |
+|---|:---:|:---:|:---:|:---:|:---:|
+| Rainfall / Weather Data | ✅ | ✅ | ⚪ | ✅ | ✅ |
+| Real-Time IoT Sensors | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Hyper-Local Village/Ward Risk | ⚪ | ⚪ | ⚪ | ⚪ | ✅ |
+| AI + Hydrological Fusion | ⚪ | ✅ | ⚪ | ✅ | ✅ |
+| Flood–Landslide Interaction | ❌ | ❌ | ✅ | ❌ | ✅ |
+| Explainable Risk Factors | ❌ | ❌ | ❌ | ⚪ | ✅ |
+| Shelter & Safer Route | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Offline LoRa + Local Alert | ❌ | ❌ | ❌ | ❌ | ✅ |
+| Prediction → Action | ⚪ | ⚪ | ⚪ | ⚪ | ✅ |
